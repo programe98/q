@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre{
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+</head>
+<body>
+    
+<form action="index.php">
+<div class="sobre">
+<label for="nome">nome</label>
+<input type="text" name="nome" id="nome" placeholder="nome" required maxlength="20" min="2">
+<label for="sobrenome">sobrenome</label>
+<input type="text" placeholder="sobrenome" id="sobrenome" name="sobrenome" required maxlength="20" min="2">
+<label for="idade">idade</label>
+<input type="number" name="dade" id="idade" min="8" maxlength="8" placeholder="00/00/0000">
+</div>
+
+
+<div class="sexo">
+    <label for="masculino">masculino</label>
+    <input type="radio" id="masculino" name="masculino">
+    <label for="feminino">feminino</label>
+    <input type="radio" id="feminino" name="feminino">
+    <label for="outros">outros</label>
+    <input type="radio" id="outros" name="outros">
+</div>
+
+<div class="termo">
+    <input type="checkbox" name="termo" id="termo" required>
+    <a href="">ao enviar no concorda: politica de privacidade</a>
+</div>
+
+<div>
+    <input type="submit" value="enviar">
+</div>
+
+</form>
+
+
+</body>
+</html>
